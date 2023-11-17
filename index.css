@@ -1,0 +1,98 @@
+
+:root {
+    /* custom property */
+    --blanco: #fff;
+    /* Tono opaco  */
+    --oscuro: #212121;
+    /* Color primario en la paleta */
+    --primario: #ffc107;
+    /* Color secundario en la paleta */
+    --secundario: #0097a7;
+    --gris: #757575;
+    --gris_claro: #DFE9F3;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.page-header {
+    padding-top: 65px;
+}
+
+.background-image1 {
+    background-image: url(./mipapa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+section {
+    height: 89vh;
+}
+
+.division {
+    display: flex;
+    height: 100%;
+
+}
+
+.division .contenedor3 {
+    display: block;
+    width: 50vw;
+    padding: 5rem;
+}
+
+.divisor3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.end {
+    height: 100px;
+    display: flex;
+    align-content: flex-end;
+}
+.colorrojo{
+    background-color: red;
+}
+
+.background-image1 .contenedor {
+    padding: 50px;
+    color: var(--blanco);
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.contenedor5{
+    border: 10px solid #ff0000;
+}
