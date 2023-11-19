@@ -10,6 +10,7 @@
     --secundario: #0097a7;
     --gris: #757575;
     --gris_claro: #DFE9F3;
+    --light-gray: #f4f5f5;
 }
 
 *,
@@ -25,6 +26,9 @@ html {
 body {
     padding: 0;
     margin: 0;
+    font-family: raleway,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
 }
 
 header {
@@ -64,9 +68,24 @@ section {
 }
 
 .division .contenedor3 {
-    display: block;
-    width: 50vw;
-    padding: 5rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.contenedor3 form {
+    width: 100%;
+}
+
+.division .contenedor3 h2 {
+    padding-left: 2rem;
+}
+
+.text1 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .divisor3 {
@@ -83,6 +102,10 @@ section {
     background-color: red;
 }
 
+.colorgris{
+    background-color: var(--light-gray);
+}
+
 .background-image1 .contenedor {
     padding: 50px;
     color: var(--blanco);
@@ -95,4 +118,108 @@ section {
 }
 .contenedor5{
     border: 10px solid #ff0000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding: 0rem 1rem 1rem 1rem;
+    text-transform: uppercase;
+}
+
+.contenedor5 span {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.contenedor6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.font-height-large {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+.font-height-middle {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.font-height-small {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.font-color-white{
+    color: white;
+}
+
+.vertical-text {
+    display: inline;
+    margin: 0;
+    writing-mode: vertical-rl;
+    transform: scale(-1,-1);
+    text-align: end;
+    padding-bottom:2%;
+}
+
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
+.services p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.05;
+    margin: 0;
+}
+
+.services h4 {
+    margin: 0;
+}
+
+.campo input {
+    width: 50%;
+    height: 2rem;
+}
+
+.campo label {
+    width: 50%;
+}
+
+.campo textarea {
+    width: 50%;
+}
+
+.campo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.title-size {
+    font-size: 42px;
+}
+
+.text-red{
+    color: #ff4038;
+}
+
+.regular-text {
+    letter-spacing: .02em;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #888;
+}
+
+.about-us {
+    padding: 3rem;
 }
