@@ -61,47 +61,45 @@
          <!--Final de Seccion: Servicios-->
 
           <!--Seccion de: formulario del cliente-->
-          <section>
-            <form class="formulario">
-                <fieldset>
-                <div class="estructura-del-form">
-                    <legend>Datos del cliente</legend>
 
-                    <div class="componentes-form">
-                        <label>
-                            Nombre
-                        </label>
-                        <input type="text" onkeypress="" placeholder="Tu Nombre"/>
-                    </div>
+        <form class="formulario">
+            <fieldset><!--Permite organizar en grupos los campos de un formulario-->
+                <legend>
+                    Datos del Cliente
+                </legend>
+                <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>
+                                Nombre
+                                <input class="input-text" type="text" placeholder="Tu nombre">
+                            </label>
+                        </div>
+                        <div class="campo">
+                            <label>
+                                Teléfono
+                                <input class="input-text" type="tel" placeholder="Tu teléfono">
+                            </label>
+                        </div>
+                        <div class="campo">
+                            <label>
+                                Correo
+                                <input class="input-text" type="email" placeholder="Tu correo">
+                            </label>
+                        </div>
+                        <div class="campo">
+                            <label>
+                                Motivo de consulta
+                                <textarea></textarea>
+                            </label>
+                        </div>
 
-                    <div class="componentes-form">
-                        <label>
-                            Número de Teléfono
-                        </label>
-                        <input type="tel" onkeypress="" placeholder="Tu Numero"/>
-                    </div>
-
-                    <div class="componentes-form">
-                        <label>
-                            Correo electronico 
-                        </label>
-                        <input type="email" onkeypress="" placeholder="Tu Correo"/>
-                    </div>
-
-                    <div class="componentes-form">
-                        <label>Motivo de consulta</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div class="componentes-form">
-                        <input class="boton" type="submit" value="Enviar" />
-                    </div>
-                    
-                </div><!--Fin de seccion: estructura-->
-                </fieldset>
-            </form>
-            <!--Fin de Seccion: formulario del cliente-->
-          </section>
+                </div><!--.contenedor-campos-->
+                
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>&copy; 2023 Consultorio de Radiología</p>
