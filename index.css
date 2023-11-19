@@ -11,6 +11,7 @@
     --gris: #757575;
     --gris_claro: #DFE9F3;
     --light-gray: #f4f5f5;
+    --medioazulmediogris: #94b8b8;
 }
 
 *,
@@ -44,7 +45,7 @@ footer {
     text-align: center;
     padding: 1em;
 }
-
+/*Seccion de la imagen y coctactoss*/
 .page-header {
     padding-top: 65px;
 }
@@ -222,4 +223,46 @@ section {
 
 .about-us {
     padding: 3rem;
+}
+/*Seccion del formulario*/
+
+form.formulario {
+    background-color: var(--medioazulmediogris);
+    font-weight: bold;
+    border-radius: 1rem;
+    width: min(60rem, 100%);
+    padding: 2rem; /* Añade un poco de espacio alrededor del formulario */
+    text-align: center; /* Centra el contenido del formulario */
+    margin: 0 auto; /*Centra el formulario en la pagina*/
+}
+
+.estructura-del-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.estructura-del-form legend{
+    font-size: 1.5rem;
+}
+.componentes-form{
+    color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem; /* Añade un poco de espacio entre los componentes */
+}
+.componentes-form label{
+    text-transform: uppercase;
+}
+.componentes-form input, .componentes-form textarea{
+    margin: auto;
+}
+.boton{
+    background-color:#DFE9F3;
+    margin: auto;
+    color:#333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
