@@ -80,8 +80,15 @@ section {
     display: flex;
     align-content: flex-end;
 }
-.colorrojo{
-    background-color: red;
+.colorrojo
+{
+    
+    background-color: rgb(47, 0, 255);
+    color: white;
+    background-image: url('../img/mmm.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    position: relative;
+    width: 60%;
 }
 
 .background-image1 .contenedor {
