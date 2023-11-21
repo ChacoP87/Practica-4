@@ -53,12 +53,14 @@ footer p{
     margin: 0;
 }
 
-/*Seccion de la imagen y coctactoss*/
+/*Seccion de la imagen y contactoss*/
 
-.background-image1 {
+.background-image1 
+{
     background-image: url(./mipapa.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;/* Ajusta el tamaño de la imagen al contenedor */
+  /* Otros estilos opcionales */
     position: relative;
     width: 100%;
     height: 89vh;
@@ -77,21 +79,25 @@ footer p{
     display: flex;
     
 }
-.form{
+.form
+{
     flex:5;
     width: 100%;
 }
 
-.division  h2 {
+.division  h2 
+{
     padding-left: 2rem;
 }
 
-.text1 {
+.text1 
+{
     font-size: 3rem;
     font-weight: bold;
 }
 
-.divisor3 {
+.divisor3
+{
     display: flex;
     justify-content: space-between;
 }
