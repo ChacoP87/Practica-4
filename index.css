@@ -187,11 +187,11 @@ footer p{
 }
 
 .services p {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: normal;
     line-height: 1.05;
     margin: 0;
-    font-size: 1.5rem;
+
 }
 
 .services h4 {
@@ -294,7 +294,7 @@ footer p{
 }
 
 .campo textarea {
-    height: 20rem;
+    height: 25rem;
     /*Hacer mas alta la altura del textarea*/
     margin-top: 2rem;
 
@@ -309,9 +309,24 @@ footer p{
 
 }
 
+fieldset{
+    height: 100%;
+}
+
+.contenedor-campos{
+    height: 90%;
+}
+
+.inputs{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .campo input{
     border-radius: 1rem;
-    width: 50rem;
+    width: 100%;
     padding: 1rem;
 }
 
@@ -357,6 +372,161 @@ footer p{
 }
 
 
-@media (max-width: 768px) {
 
+@media (max-width: 768px){
+
+    /* manejo de la sección de la imágen */
+    .background-image1 .contenedor{
+
+        justify-content: space-between;
+        
+    }
+
+    .background-image1{
+        height: calc(100vh - 7rem);
+    }
+
+    .divisor3{
+        flex-direction: column;
+        height: 40%;
+        justify-content: space-between;
+        
+    }
+
+    .contenedor5{
+        width: 40%;
+        margin-bottom: 3rem;
+    }
+
+    /* manejo de la sección de about us */
+    .about-us{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* manejo de la sección de servicios y contacto */
+    .division{
+        display: inline;
+    }
+
+    .Servicios{
+        height: 70vh;
+    }
+    
+}
+
+
+@media (max-width: 468px) {
+
+    /* manejo de la sección de la imágen */
+    .background-image1 .contenedor{
+        padding: 2rem;
+        justify-content: space-between;
+        
+    }
+
+    .background-image1{
+        height: 84vh;
+    }
+
+    .divisor3{
+        flex-direction: column;
+        height: 60%;
+        justify-content: space-around;
+        
+    }
+
+    .contenedor5{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .font-height-large{
+        font-size: 3rem;
+    }
+
+    /* manejo de la sección de about us */
+    .about-us{
+        flex-direction: column;
+        height: 100%;
+    }
+    .about-us .regular-text{
+        width:100%;
+        text-align: center;
+    }
+
+    /* manejo de sección de servicios */
+
+    .division{
+        display: inline;
+    }
+
+    .Servicios .vertical-text{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        
+        
+    }
+   .Servicios{
+        flex-direction: column;
+        height:100vh;
+    }
+
+    .services_individuales h4{
+        font-size: 2.6rem;
+
+    }
+
+    .services_individuales p{
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .services{
+        padding: 2rem;
+        margin: 0;
+        height: 100%;
+        justify-content: space-around;
+        padding-top: 0;
+    }
+
+
+    /* manejo de sección de contactos */
+    .campo, label{
+        display: inline;
+    }
+
+    .boton{
+        width: 100%;
+        height: 4rem;
+    }
+
+    .formulario{
+        margin: 0;
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .formulario legend{
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+    .form{
+        height: 100vh;
+    }
+
+    .contenedor-campos .inputs{
+        height: 70%;
+    }
+    .campo textarea{
+        height: 11rem;
+    }
+
+    .formulario fieldset{
+        padding-bottom: 0;
+    }
 }
